@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: url('https://wallpapershome.com/images/pages/pic_h/23277.jpg') center/cover;
+    }
+
+    .glass-container {
+      position: relative;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+      padding: 20px;
+      width: 400px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .glass-texture {
+      background: url('frosted-texture.png');
+      opacity: 0.5;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+
+    .content {
+      z-index: 1;
+      color: white;
+      text-align: center;
+    }
+
+    .input-group {
+      margin-bottom: 15px;
+    }
+
+    .input-group label {
+      display: block;
+      text-align: left;
+      margin-bottom: 5px;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .checkbox-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .checkbox-group label {
+      margin-left: 5px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      background-color: #3498db;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #2980b9;
+    }
+
+    .link {
+      color: #3498db;
+      text-decoration: none;
+    }
+  </style>
+  <title>Login and Registration</title>
+</head>
+<body>
+  <div class="glass-container">
+    <div class="glass-texture"></div>
+    <div class="content">
+      <h1>Login</h1>
+      <div class="input-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email">
+      </div>
+      <div class="input-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password">
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="remember" value="remember">
+        <label for="remember">Remember me</label>
+      </div>
+      <button class="button">Login</button>
+      <p><a href="#" class="link">Forgot password?</a></p>
+      <p>Don't have an account? <a href="#" class="link">Register</a></p>
+    </div>
+  </div>
+</body>
+</html>
